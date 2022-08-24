@@ -31,13 +31,6 @@ btnRainbow.addEventListener('click', function(){
     console.log(i, array[i]);
     screen.className = array[i];
     i = (i + 1) % array.length;
-    // if(i < array.length){
-    //     screen.className = array[i];
-    //     i = i+1;
-    // }else{
-    //     i = 0;
-    // }
-   
 });
 
 let btnHello = document.querySelector(".hello");
@@ -45,8 +38,8 @@ btnHello.addEventListener('click', function(){
     screen.innerHTML = "Hello World";
 });
 
-let input = document.querySelector("#text");
-let btnCustom = document.querySelector("#custom");
-btnCustom.addEventListener("click", function(){
-    screen.innerHTML = input.value;
+let text = document.querySelector('#text');
+let btnEnter = document.querySelector('#submit');
+btnEnter.addEventListener('click', function(){
+    screen.innerHTML = text.value; 
 });
