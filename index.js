@@ -43,3 +43,8 @@ let btnEnter = document.querySelector('#submit');
 btnEnter.addEventListener('click', function(){
     screen.innerHTML = text.value; 
 });
+
+let range = document.querySelector(".range");
+range.addEventListener('input', function (){
+    screen.style.border = range.value+"px solid black";  
+});
